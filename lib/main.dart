@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_circular_slider/flutter_circular_slider.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,8 +26,12 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Center(),
+      backgroundColor: Colors.blueGrey,
+      body: Center(
+        child: Container(
+          child: DoubleCircularSlider(100, 0, 20),
+        ),
+      ),
     );
   }
 }
