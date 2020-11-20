@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_circular_slider/flutter_circular_slider.dart';
+
+import 'sleep_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -27,9 +28,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blueGrey,
-      body: Center(
-        child: Container(
-          child: DoubleCircularSlider(100, 0, 20),
+      body: Scaffold(
+        body: Container(
+          child: SleepPage(),
         ),
       ),
     );
